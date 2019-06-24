@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="login"></ion-back-button>
+        </ion-buttons>
+    <ion-title>
+      Check device location
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+   
+    <!-- <p>{{myForce}}</p> -->
+    <!-- <ion-button (click)="updateMyValue()">Change to you</ion-button> -->
+    <!-- <ion-button full (click)="showAutoHideLoader()">showAutoHideLoader</ion-button> -->
+    <h2><b>Current Time</b></h2>
+    <h2><b> {{displayTimer | date: "dd/MM/yyyy HH:mm:ss a"}} </b></h2>
+
+    <hr>
+    <h2><b>Current Location</b></h2>
+    <p>latitude : {{lat}}</p>
+    <p>longtiitude : {{long}}</p>
+    <ion-button expand="full" (click)="getCurrentLocation()">Check My Location</ion-button>
+    
+  </div>
+</ion-content>

@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="login"></ion-back-button>
+        </ion-buttons>
+    <ion-title>Movie List Data API</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+<p>Data from swapi.co </p>
+  <ion-list> 
+    <ion-item *ngFor="let film of (films | async)?.results">
+      {{ film.title }}
+    </ion-item>
+  </ion-list>
+</ion-content>

@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-buttons slot="start">
+          <ion-back-button defaultHref="login"></ion-back-button>
+        </ion-buttons>
+    <ion-title>device</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <p>This function can test on mobile only !</p>
+  <hr>
+  <p>Device ID : {{deviceID}}</p>
+  <ion-button expand="full" (click)="getDeviceID()">Get Device ID</ion-button>
+</ion-content>

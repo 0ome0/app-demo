@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>
+        Demo ionic application
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  
+<ion-content padding>
+    <form>
+      <ion-grid>
+        <ion-row color="primary" justify-content-center>
+          <ion-col align-self-center size-md="6" size-lg="5" size-xs="12">
+            <div text-center>
+              
+              <img src="assets/imgs/logo.png" style="width:50%;padding-top:5%;">
+              <h3>Demo function</h3>
+            </div>
+            <!-- <div padding>
+              <ion-item>
+                <ion-input name="email" type="text" placeholder="Username" value="" [(ngModel)]="userData.username" required></ion-input>
+              </ion-item>
+              <ion-item>
+                <ion-input name="password" type="password" placeholder="Password" [(ngModel)]="userData.password" required></ion-input>
+              </ion-item>
+            </div> -->
+            <div padding>
+              <!-- <ion-button size="large" type="submit" expand="block" (click)="login()">Login</ion-button> -->
+              <ion-button expend="full" type="submit" color="primary" (click)="goToDeviceIdPage()" expand="block">Get device ID</ion-button>
+              <ion-button expend="full" type="submit" color="primary" (click)="goToCheckLocationPage()" expand="block">Check location</ion-button>
+              <ion-button expend="full" type="submit" color="primary" (click)="gotoUserPage()" expand="block">HTTP User Api</ion-button>
+              <ion-button expend="full" type="submit" color="primary" (click)="goToPostPage()" expand="block">HTTP Movie Api</ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </ion-content>
